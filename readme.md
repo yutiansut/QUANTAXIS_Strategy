@@ -1,3 +1,3 @@
 # QUANTAXIS_STRATEGY
 
-based on data and stimulated trading system of quantaxis, we can design the strategy and test it, this responsity give some example of the quantaxis strategy.
+Based on data and stimulated trading system of quantaxis, we can design the strategy and test it, this responsity give some example of the quantaxis strategy.

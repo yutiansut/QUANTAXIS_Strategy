@@ -1,0 +1,8 @@
+    client = pymongo.MongoClient(host="127.0.0.1", port=27017)
+    db = client['wsc']
+    coll=db['articles']
+    strings =""
+    for content in coll.find({"poster":"王维丹"}):
+        urlx=content['content']
+        strings=strings+url     
+    text_file = strings
