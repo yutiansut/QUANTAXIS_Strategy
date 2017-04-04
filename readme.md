@@ -1,8 +1,53 @@
-# QUANTAXIS_STRATEGY
-
-Based on data and simulated trading system of quantaxis, we can design the strategy and test it, this repository give some example of the quantaxis strategy.
+#QUANATXIS Strategy
 
 
-Before we go to the strategy sections, the first thing we should do is to specific and fix our apis, for this is the last step of quantaxis, anything changed in the section before will totally changed our codes.
 
 
+CTA Strategy Framework Review | 策略框架综述
+=====
+
+
+
+<!-- TOC -->
+
+- [趋势策略](#趋势策略)
+    - [日内趋势策略(tick级别的回测)](#日内趋势策略tick级别的回测)
+        - [菲阿里四价策略](#菲阿里四价策略)
+            - [参数设置](#参数设置)
+            - [交易逻辑](#交易逻辑)
+        - [横盘突破策略](#横盘突破策略)
+        - [唐奇安通道策略](#唐奇安通道策略)
+        - [R-Breaker策略](#r-breaker策略)
+            - [参数设置](#参数设置-1)
+            - [交易逻辑](#交易逻辑-1)
+        - [Dual Thrust策略](#dual-thrust策略)
+            - [参数设置](#参数设置-2)
+            - [交易逻辑](#交易逻辑-2)
+        - [ATR策略](#atr策略)
+            - [参数设置](#参数设置-3)
+            - [交易逻辑](#交易逻辑-3)
+        - [King-keltner策略](#king-keltner策略)
+            - [参数设置](#参数设置-4)
+            - [交易逻辑](#交易逻辑-4)
+        - [实证检验部分](#实证检验部分)
+            - [不同商品期货的单边回测结果](#不同商品期货的单边回测结果)
+            - [组合策略的相关性与回测表现](#组合策略的相关性与回测表现)
+    - [日间交易策略](#日间交易策略)
+        - [均线策略](#均线策略)
+        - [MACD策略](#macd策略)
+        - [布林带通道策略](#布林带通道策略)
+        - [布林策略Bollinger Bandit](#布林策略bollinger-bandit)
+            - [参数设置](#参数设置-5)
+            - [交易逻辑](#交易逻辑-5)
+- [套利策略](#套利策略)
+    - [关联套利](#关联套利)
+        - [农产品跨品种套利](#农产品跨品种套利)
+        - [基本金属跨品种套利](#基本金属跨品种套利)
+        - [金融衍生品跨市跨品种套利](#金融衍生品跨市跨品种套利)
+    - [内因套利](#内因套利)
+        - [期现套利](#期现套利)
+        - [同一品种的跨期套利](#同一品种的跨期套利)
+        - [同一品种的跨市场套利](#同一品种的跨市场套利)
+        - [产业链套利](#产业链套利)
+            - [黑色产业链](#黑色产业链)
+                - [钢产业 (螺纹钢，铁矿，焦炭)](#钢产业-螺纹钢铁矿焦炭)
